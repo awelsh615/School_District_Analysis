@@ -30,7 +30,18 @@ The following is the Summary by School for the complete set of data.
 ![School Summary](Analysis/per_school_summary.PNG)
 
 ### Thomas High School
-The schoolboard was notified that the students_complete.csv file showed evidence of academic dishonesty, specifically regarding the testing data for ninth grade students at Thomas High School.  Using '''df.loc''' methods in Pandas, I changed the 9th grade student data to NaN (not a number) and reran the analysis with only the 10th - 12th grade student data from Thomas High School.  The updated Summary by School data looks like the following.
+The schoolboard was notified that the students_complete.csv file showed evidence of academic dishonesty, specifically regarding the testing data for ninth grade students at Thomas High School.  Using '''df.loc''' methods in Pandas, I changed the 9th grade student data to NaN (not a number) and reran the analysis with only the 10th - 12th grade student data from Thomas High School.  The updated Summary by School data looks like the following.  The THomas High School row is yellow to highlight the changes to the math and reading passing percentages.
 ![Updated School Summary](Analysis/Updated_per_school_summary.PNG)
 
-### Challenges of this Project
+The following list addresses the changes to the data after excluding Thomas High School's 9th grade:
+- 461 9th grade students at Thomas High School were removed
+- The Average Math Score decreased from 83.41 to 83.35
+- The Average Reading Score increased from 83.84 to 83.90
+- There was a negligible (<.1%) change in % Passing Mathath
+- There was a negligible (<.3%) change in % Passing Reading
+- The overall passing percentage changed by less than 1/2 of 1 percentage point
+
+### Conclusion
+Four major changes occurred after omitting the Thomas High School 9th grade class: fewer overall students were counted in the data, 461 fewer students were counted at Thomas High School, small changes in the average math and reading scores, and small changes in the math, reading and overall percentage pass rates.
+
+The changes for both math and reading, including average scores and passing rates, were negligible.  I would not rule out academic dishonesty, the but effect on the overall school performance is trivial.
