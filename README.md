@@ -31,7 +31,7 @@ The following is the Summary by School for the complete set of data.
 
 ### Thomas High School
 The schoolboard was notified that the students_complete.csv file showed evidence of academic dishonesty, specifically regarding the testing data for ninth grade students at Thomas High School.  Using '''df.loc''' methods in Pandas, I changed the 9th grade student data to NaN (not a number) and reran the analysis with only the 10th - 12th grade student data from Thomas High School.  The updated Summary by School data looks like the following.
-![Updated School Summary]()
+![Updated School Summary](Analysis/Updated_per_school_summary.PNG)
 
 
 ### Challenges of this Project
