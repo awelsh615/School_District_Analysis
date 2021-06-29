@@ -17,6 +17,7 @@ The purpose of this analysis was to analyze and review student funding and stand
 ## School District Summary
 ### Summary
 The following is the Summary by School for the complete set of data.
+![School Summary](Analysis/per_school_summary.PNG)
 
 ### Data Cleaning
 The original students_complete.csv file included several Prefixes and Suffixes that made it difficult to work with the given data.  I employed many different methods to quantify the following list of prefixes and suffixes, and the code below to remove those from the Series of Student Names.
