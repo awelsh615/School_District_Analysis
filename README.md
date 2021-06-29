@@ -15,9 +15,6 @@ The purpose of this analysis was to analyze and review student funding and stand
 - Python libraries: numpy, pandas
 
 ## School District Summary
-### Summary
-The following is the Summary by School for the complete set of data.
-![School Summary](Analysis/per_school_summary.PNG)
 
 ### Data Cleaning
 The original students_complete.csv file included several Prefixes and Suffixes that made it difficult to work with the given data.  I employed many different methods to quantify the following list of prefixes and suffixes, and the code below to remove those from the Series of Student Names.
@@ -28,9 +25,13 @@ prefixes_suffixes = ["Dr. ", "Mr. ","Ms. ", "Mrs. ", "Miss ", " MD", " DDS", " D
 for word in prefixes_suffixes:
     student_data_df["student_name"] = student_data_df["student_name"].str.replace(word,"")
 ```
+### Summary
+The following is the Summary by School for the complete set of data.
+![School Summary](Analysis/per_school_summary.PNG)
 
 ### Thomas High School
-
+The schoolboard was notified that the students_complete.csv file showed evidence of academic dishonesty, specifically regarding the testing data for ninth grade students at Thomas High School.  Using '''df.loc''' methods in Pandas, I changed the 9th grade student data to NaN (not a number) and reran the analysis with only the 10th - 12th grade student data from Thomas High School.  The updated Summary by School data looks like the following.
+![Updated School Summary]()
 
 
 ### Challenges of this Project
