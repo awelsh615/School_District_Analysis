@@ -1,4 +1,4 @@
-# School_District_Analysis
+# School District Analysis
 
 ## Overview of District Analysis
 ### Purpose of Analysis
@@ -18,10 +18,12 @@ The purpose of this analysis was to analyze and review student funding and stand
 ### Data Cleaning
 The original students_complete.csv file included several Prefixes and Suffixes that made it difficult to work with the given data.  I employed many different methods to quantify the following list of prefixes and suffixes, and the code below to remove those from the Series of Student Names.
 
-`prefixes_suffixes = ["Dr. ", "Mr. ","Ms. ", "Mrs. ", "Miss ", " MD", " DDS", " DVM", " PhD"]
+```
+prefixes_suffixes = ["Dr. ", "Mr. ","Ms. ", "Mrs. ", "Miss ", " MD", " DDS", " DVM", " PhD"]
 
 for word in prefixes_suffixes:
-    student_data_df["student_name"] = student_data_df["student_name"].str.replace(word,"")`
+    student_data_df["student_name"] = student_data_df["student_name"].str.replace(word,"")
+```
 
 ### Thomas High School
 
